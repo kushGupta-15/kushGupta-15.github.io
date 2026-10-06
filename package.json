@@ -1,0 +1,19 @@
+{
+  "name": "kush-gupta-portfolio",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Website for Kush Gupta - Full Stack Software Engineer",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "kush-gupta",
+    "software-engineer",
+    "full-stack",
+    "iiit-una"
+  ],
+  "author": "Kush Gupta",
+  "license": "MIT"
+}
