@@ -1,4 +1,4 @@
-// Kush Gupta Portfolio Structured Data - Updated with Latest Resume
+// Kush Gupta Portfolio Structured Data - Strictly Matching Updated Resume
 const PORTFOLIO_DATA = {
   profile: {
     name: "Kush Gupta",
@@ -68,84 +68,128 @@ const PORTFOLIO_DATA = {
     }
   ],
 
+  keyCourses: {
+    mathematics: [
+      "Linear Algebra",
+      "Basic Calculus",
+      "Discrete Mathematics",
+      "Probability & Random Processes"
+    ],
+    coreSubjects: [
+      "DSA",
+      "OOPS",
+      "Discrete Structures",
+      "Computer Organization",
+      "Operating Systems",
+      "Digital System Design",
+      "Computer Networks",
+      "DBMS",
+      "System Design",
+      "Compiler Design",
+      "Parallel Architecture and Processing",
+      "Machine Learning",
+      "Deep Learning",
+      "Software Development"
+    ]
+  },
+
   courses: [
-    "Data Structures & Algorithms",
-    "System Design",
-    "Operating Systems",
-    "Database Management Systems (DBMS)",
-    "Computer Networks",
-    "Compiler Design",
-    "Deep Learning",
-    "Machine Learning",
+    "Data Structures & Algorithms (DSA)",
+    "Object-Oriented Programming (OOPS)",
     "Discrete Structures",
     "Computer Organization",
-    "Object-Oriented Programming (OOP)",
-    "Parallel Architecture & Processing",
+    "Operating Systems",
+    "Digital System Design",
+    "Computer Networks",
+    "DBMS",
+    "System Design",
+    "Compiler Design",
+    "Parallel Architecture and Processing",
+    "Machine Learning",
+    "Deep Learning",
     "Software Development",
-    "Linear Algebra & Calculus"
+    "Linear Algebra",
+    "Basic Calculus",
+    "Discrete Mathematics",
+    "Probability & Random Processes"
   ],
 
+  // STRICTLY FROM RESUME
   skills: {
-    languages: [
-      { name: "JavaScript", level: "Advanced", icon: "file-code" },
-      { name: "TypeScript", level: "Advanced", icon: "file-code" },
-      { name: "Python", level: "Advanced", icon: "terminal" },
-      { name: "C++", level: "Advanced", icon: "code" },
-      { name: "SQL", level: "Proficient", icon: "database" }
-    ],
+    languages: ["JavaScript", "TypeScript", "Python", "C++", "SQL"],
     frontend: [
-      { name: "React.js", level: "Advanced", icon: "layout" },
-      { name: "Next.js 15 (App Router, Server Actions, RSC)", level: "Advanced", icon: "globe" },
-      { name: "Tailwind CSS", level: "Advanced", icon: "palette" },
-      { name: "Redux Toolkit", level: "Proficient", icon: "cpu" },
-      { name: "Zustand", level: "Proficient", icon: "box" },
-      { name: "HTML5 / CSS3", level: "Advanced", icon: "file" },
-      { name: "jQuery", level: "Familiar", icon: "layers" }
+      "React.js",
+      "Next.js (App Router, Server Actions, RSC)",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Redux",
+      "Zustand",
+      "jQuery"
     ],
     backend: [
-      { name: "Node.js", level: "Advanced", icon: "server" },
-      { name: "Express.js", level: "Advanced", icon: "git-branch" },
-      { name: "REST APIs", level: "Advanced", icon: "network" },
-      { name: "Socket.IO & WebSockets", level: "Advanced", icon: "activity" },
-      { name: "JWT Authentication", level: "Advanced", icon: "shield" },
-      { name: "NextAuth v5", level: "Advanced", icon: "key" },
-      { name: "Zod Validation", level: "Advanced", icon: "check-circle" },
-      { name: "Arcjet Security", level: "Proficient", icon: "shield-check" }
+      "Node.js",
+      "Express.js",
+      "REST APIs",
+      "Socket.IO",
+      "WebSockets",
+      "JWT Authentication",
+      "NextAuth",
+      "Zod",
+      "Arcjet"
     ],
-    databases: [
-      { name: "MongoDB", level: "Advanced", icon: "database" },
-      { name: "PostgreSQL (Neon)", level: "Advanced", icon: "database" },
-      { name: "Prisma ORM", level: "Advanced", icon: "hard-drive" },
-      { name: "Firebase", level: "Proficient", icon: "flame" }
+    databasesOrm: [
+      "MongoDB",
+      "PostgreSQL (Neon)",
+      "Prisma ORM",
+      "Firebase"
     ],
     aiRealtime: [
-      { name: "Google Gemini API (3.8 Flash)", level: "Advanced", icon: "sparkles" },
-      { name: "WebRTC P2P Video", level: "Advanced", icon: "video" },
-      { name: "Stream Chat & Video SDK", level: "Advanced", icon: "message-square" },
-      { name: "Web Audio API", level: "Proficient", icon: "volume-2" },
-      { name: "Web Speech API", level: "Proficient", icon: "mic" }
+      "Google Gemini API",
+      "WebRTC",
+      "Stream SDK",
+      "Web Audio API",
+      "Web Speech API"
     ],
-    integrationsDevOps: [
-      { name: "Stripe Checkout", level: "Proficient", icon: "credit-card" },
-      { name: "Inngest Serverless Events", level: "Proficient", icon: "zap" },
-      { name: "Resend Transactional Emails", level: "Proficient", icon: "mail" },
-      { name: "UploadThing", level: "Proficient", icon: "upload-cloud" },
-      { name: "Cloudinary CDN Pipeline", level: "Proficient", icon: "image" },
-      { name: "Clerk Auth", level: "Proficient", icon: "lock" },
-      { name: "Vitest & Node.js Test Runner", level: "Proficient", icon: "check-square" },
-      { name: "GitHub Actions (CI/CD)", level: "Proficient", icon: "git-pull-request" },
-      { name: "Docker", level: "Proficient", icon: "container" },
-      { name: "AWS (S3, EC2)", level: "Proficient", icon: "cloud" },
-      { name: "Vercel & Render", level: "Advanced", icon: "external-link" }
+    integrationsServices: [
+      "Stripe",
+      "Inngest",
+      "Resend",
+      "UploadThing",
+      "Cloudinary",
+      "Clerk"
+    ],
+    testingDevops: [
+      "Vitest",
+      "Node.js Test Runner",
+      "GitHub Actions (CI/CD)",
+      "Git",
+      "GitHub",
+      "Docker",
+      "AWS",
+      "Vercel",
+      "Render"
     ],
     libraries: [
-      { name: "NumPy", level: "Proficient", icon: "hash" },
-      { name: "Pandas", level: "Proficient", icon: "table" },
-      { name: "Matplotlib", level: "Proficient", icon: "bar-chart-2" },
-      { name: "Seaborn", level: "Proficient", icon: "pie-chart" },
-      { name: "Scikit-Learn", level: "Proficient", icon: "cpu" },
-      { name: "XGBoost & LightGBM", level: "Proficient", icon: "trending-up" },
-      { name: "Optuna & SHAP", level: "Proficient", icon: "sliders" }
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn"
+    ],
+    tools: [
+      "VS Code",
+      "Replit",
+      "LaTeX"
+    ],
+    softSkills: [
+      "Problem Solving",
+      "Analytical Thinking",
+      "Leadership (Chess Captain)",
+      "Teamwork & Collaboration",
+      "Communication",
+      "Time Management",
+      "Adaptability",
+      "Quick Learning"
     ]
   },
 
@@ -160,8 +204,8 @@ const PORTFOLIO_DATA = {
       github: "https://github.com/kushGupta-15/Career-wave",
       demo: "https://github.com/kushGupta-15/Career-wave",
       imageTag: "Next.js 15 + Gemini AI + Neon",
-      tech: ["Next.js 15", "TypeScript", "Prisma ORM", "PostgreSQL (Neon)", "Gemini 3.8 Flash", "Stripe", "Inngest", "NextAuth v5", "UploadThing", "Resend", "Arcjet", "Zod"],
-      summary: "Architected an enterprise ATS job portal replacing traditional REST APIs with Next.js 15 App Router Server Actions, featuring real-time AI ATS resume evaluation, Stripe monetization, and serverless expiration scheduling.",
+      tech: ["Next.js 15", "TypeScript", "Prisma ORM", "PostgreSQL (Neon)", "Google Gemini API", "Stripe", "Inngest", "NextAuth", "UploadThing", "Resend", "Arcjet", "Zod"],
+      summary: "Enterprise job board built with Next.js 15 App Router and Prisma on serverless PostgreSQL (Neon), featuring Gemini AI resume-to-job ATS scoring and Stripe monetization.",
       highlights: [
         "Architected a Full-Stack ATS Platform: Built an enterprise job board with Next.js 15 App Router, TypeScript, and Prisma ORM on serverless PostgreSQL (Neon), replacing separate REST APIs with type-safe Server Actions and React Server Components.",
         "Engineered Gemini AI ATS Evaluator: Integrated Google Gemini 3.8 Flash to compute real-time resume-to-job ATS match scores, highlight candidate strengths, and identify keyword gaps, alongside a conversational career discovery assistant.",
@@ -180,7 +224,7 @@ const PORTFOLIO_DATA = {
       github: "https://github.com/kushGupta-15/SketchBattle",
       demo: "https://github.com/kushGupta-15/SketchBattle",
       imageTag: "React 18 + Socket.IO + WebRTC",
-      tech: ["React 18", "TypeScript", "Node.js", "Express", "Socket.IO", "WebRTC", "Web Audio API", "Web Speech API", "MongoDB", "GitHub Actions"],
+      tech: ["React.js", "TypeScript", "Node.js", "Socket.IO", "WebSockets", "WebRTC", "Web Audio API", "Web Speech API", "MongoDB", "GitHub Actions (CI/CD)"],
       summary: "Synchronized multiplayer drawing and guessing game featuring sub-50ms canvas stroke latency, BFS flood fill, Levenshtein typo alerts, room-scoped WebRTC video, and browser synthesized audio.",
       highlights: [
         "Real-Time Multiplayer Canvas: Built a synchronized drawing engine with sub-50ms latency using React 18, TypeScript, and Socket.IO, featuring a 4-way BFS flood fill algorithm, stroke undo stack, and mid-round canvas history replay upon reconnection.",
@@ -219,14 +263,14 @@ const PORTFOLIO_DATA = {
       featured: true,
       github: "https://github.com/kushGupta-15/Customer-Lifetime-Value-Prediction",
       demo: "https://customer-lifetime-value-prediction-kh04.onrender.com/",
-      imageTag: "Python + XGBoost + LightGBM + Optuna",
-      tech: ["Python", "XGBoost", "LightGBM", "Random Forest", "Optuna", "SHAP", "Scikit-Learn", "Pandas", "Render"],
-      summary: "Predicting 90-day future customer spending from transaction history alone on the 1.07M-row UCI Online Retail II dataset, using leakage-free temporal validation, multi-model benchmarking, Optuna tuning, and SHAP explainability.",
+      imageTag: "Python + NumPy + Pandas + Render",
+      tech: ["Python", "NumPy", "Pandas", "Render"],
+      summary: "Predicting 90-day future customer spending from transaction history alone on the 1.07M-row UCI Online Retail II dataset, using leakage-free temporal validation and decile lift analysis.",
       highlights: [
         "Leakage-Free Temporal Target Construction: Designed a strict temporal cutoff parameter separating the feature window from the prediction window, asserted in code rather than assumed.",
         "11 Engineered Customer-Level Features: Formulated domain-specific features across RFM (Recency, Frequency, Monetary), tenure/cadence, and behavioral basket breadth.",
-        "Comparison of Classical ML Models: Evaluated Linear Regression, Random Forest, XGBoost, and LightGBM with 50 Optuna hyperparameter optimization trials against 5-fold cross-validated MAE.",
-        "SHAP Explainability & Decile Lift: Integrated global beeswarm and single-customer waterfall SHAP diagnostics; decile lift analysis showed the top predicted decile captures 54.2% of realized 90-day revenue.",
+        "Comparison of Machine Learning Models: Evaluated models with 50 optimization trials against 5-fold cross-validated MAE.",
+        "Explainability & Decile Lift: Evaluated model diagnostics; decile lift analysis showed the top predicted decile captures 54.2% of realized 90-day revenue.",
         "Live Cloud Deployment: Deployed an interactive prediction dashboard and inference endpoint live on Render."
       ]
     },
@@ -240,7 +284,7 @@ const PORTFOLIO_DATA = {
       github: "https://github.com/kushGupta-15/API_Gateway",
       demo: "https://github.com/kushGupta-15/API_Gateway",
       imageTag: "API Gateway + Microservices",
-      tech: ["Node.js", "Express", "API Gateway", "Sequelize", "MySQL / Postgres", "RabbitMQ / Queue", "Microservices"],
+      tech: ["Node.js", "Express.js", "REST APIs", "SQL", "Docker"],
       summary: "Modular enterprise airline platform divided into decoupled microservices: API Gateway, Flight Search & Management, Authentication Service, Booking Service, and Automated Reminder Notification Service.",
       highlights: [
         "API Gateway acting as single entry point with reverse proxying, rate-limiting, and request forwarding.",
@@ -258,8 +302,8 @@ const PORTFOLIO_DATA = {
       featured: false,
       github: "https://github.com/kushGupta-15/GFG-sync-extension",
       demo: "https://github.com/kushGupta-15/GFG-sync-extension",
-      imageTag: "Chrome Extension + GitHub API",
-      tech: ["JavaScript", "Chrome Extensions API (Manifest V3)", "GitHub REST API", "DOM MutationObserver"],
+      imageTag: "JavaScript + GitHub REST API",
+      tech: ["JavaScript", "HTML", "CSS", "GitHub"],
       summary: "Productivity browser extension that automatically captures accepted code submissions on GeeksforGeeks and pushes solutions to the user's GitHub repository.",
       highlights: [
         "Implemented with Manifest V3 utilizing service workers and background scripts for secure credential handling.",
@@ -276,8 +320,8 @@ const PORTFOLIO_DATA = {
       featured: false,
       github: "https://github.com/kushGupta-15/Self-Corrective-RAG-Assistant",
       demo: "https://github.com/kushGupta-15/Self-Corrective-RAG-Assistant",
-      imageTag: "Python + LLM + Vector Search",
-      tech: ["Python", "RAG", "Vector Embeddings", "LangChain / LlamaIndex", "FastAPI"],
+      imageTag: "Python + Google Gemini API",
+      tech: ["Python", "Google Gemini API"],
       summary: "AI-powered retrieval pipeline incorporating corrective self-reflection to validate document relevance, filter hallucinations, and reformulate queries.",
       highlights: [
         "Evaluates document relevancy score prior to LLM synthesis to eliminate noise and false grounding.",
@@ -293,21 +337,21 @@ const PORTFOLIO_DATA = {
       subtitle: "Contest Rating: 1861 • Top Tier Algorithmic Competitor",
       badge: "Knight (1861)",
       icon: "code",
-      desc: "Solved 750+ algorithmic problems across LeetCode, GeeksforGeeks, and CP platforms. Achieved the prestigious Knight rank on LeetCode with an active contest rating of 1861."
+      desc: "Solved 750+ algorithmic problems across LeetCode, GeeksforGeeks, and other platforms; Knight on LeetCode with a contest rating of 1861."
     },
     {
       title: "Dynamic Programming Camp Graduate",
       subtitle: "AlgoUniversity led by Codeforces Master Manas Kumar Verma",
       badge: "AlgoUniversity",
       icon: "zap",
-      desc: "Completed advanced training focusing on complex DP state transitions, Matrix Exponentiation, Square Root (SQRT) Decomposition, and competitive programming techniques."
+      desc: "Completed AlgoUniversity’s Dynamic Programming Camp led by Codeforces Master Manas Kumar Verma, covering Matrix Exponentiation and SQRT Decomposition."
     },
     {
       title: "FIDE-Rated Chess Player & Inter IIIT Captain",
       subtitle: "FIDE ID: 25129937 • 2nd Place Online Inter IIIT (2025)",
       badge: "Official Rating",
       icon: "shield",
-      desc: "FIDE-rated chess player (FIDE ID: 25129937) with national and international tournament experience; served as chess team captain at Inter IIIT and secured 2nd place in the online Inter IIIT tournament (2025)."
+      desc: "FIDE-rated chess player (FIDE ID: 25129937) with national and international tournament experience; served as chess captain at Inter IIIT and secured 2nd place in the online Inter IIIT tournament (2025)."
     }
   ]
 };
