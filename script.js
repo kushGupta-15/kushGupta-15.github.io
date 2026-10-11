@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initContactForm();
   initMobileMenu();
   initScrollSpy();
-  initChessMiniGame();
 });
 
 /* ----------------------------------------------------
@@ -308,6 +307,7 @@ function initProjectModal() {
     modal.classList.remove('hidden');
     modal.classList.add('flex');
     document.body.style.overflow = 'hidden';
+    if (window.lucide) window.lucide.createIcons();
   };
 
   function closeModal() {
@@ -478,79 +478,4 @@ function initScrollSpy() {
       }
     });
   });
-}
-
-/* ----------------------------------------------------
-   12. INTERACTIVE CHESS BOARD MINI EASTER EGG
----------------------------------------------------- */
-function initChessMiniGame() {
-  const boardEl = document.getElementById('mini-chess-board');
-  const statusEl = document.getElementById('chess-status-text');
-  const resetBtn = document.getElementById('chess-reset-btn');
-  if (!boardEl) return;
-
-  // Initial famous tactical position: White to play and win (Smothered Mate setup: Nf7# or classic fork)
-  // Let's create an 8x8 representation with unicode pieces
-  const piecesInit = [
-    ['♜', '♞', '♝', '♛', '♚', '♝', '', '♜'],
-    ['♟', '♟', '♟', '', '♟', '♟', '♟', '♟'],
-    ['', '', '', '', '', '♞', '', ''],
-    ['', '', '', '♟', '', '', '', ''],
-    ['', '', '♗', '', '♙', '', '', ''],
-    ['', '', '', '', '', '', '', ''],
-    ['♙', '♙', '♙', '♙', '', '♙', '♙', '♙'],
-    ['♖', '♘', '♗', '♕', '♔', '', '♘', '♖']
-  ];
-
-  let currentBoard = JSON.parse(JSON.stringify(piecesInit));
-  let selectedSquare = null;
-
-  function renderBoard() {
-    boardEl.innerHTML = '';
-    for (let r = 0; r < 8; r++) {
-      for (let c = 0; c < 8; c++) {
-        const sq = document.createElement('div');
-        const isLight = (r + c) % 2 === 0;
-        sq.className = `chess-sq ${isLight ? 'chess-sq-light' : 'chess-sq-dark'}`;
-        sq.textContent = currentBoard[r][c];
-        sq.dataset.row = r;
-        sq.dataset.col = c;
-
-        if (selectedSquare && selectedSquare.r === r && selectedSquare.col === c) {
-          sq.classList.add('highlight');
-        }
-
-        sq.addEventListener('click', () => handleSquareClick(r, c));
-        boardEl.appendChild(sq);
-      }
-    }
-  }
-
-  function handleSquareClick(r, c) {
-    if (!selectedSquare) {
-      if (currentBoard[r][c] !== '') {
-        selectedSquare = { r, c };
-        renderBoard();
-        if (statusEl) statusEl.textContent = `Piece selected at [${String.fromCharCode(97 + c)}${8 - r}]. Click destination square!`;
-      }
-    } else {
-      const fromPiece = currentBoard[selectedSquare.r][selectedSquare.col];
-      currentBoard[r][c] = fromPiece;
-      currentBoard[selectedSquare.r][selectedSquare.col] = '';
-      selectedSquare = null;
-      renderBoard();
-      if (statusEl) statusEl.textContent = `Great move to [${String.fromCharCode(97 + c)}${8 - r}]! FIDE Rating: 25129937`;
-    }
-  }
-
-  if (resetBtn) {
-    resetBtn.addEventListener('click', () => {
-      currentBoard = JSON.parse(JSON.stringify(piecesInit));
-      selectedSquare = null;
-      renderBoard();
-      if (statusEl) statusEl.textContent = "White to move. Click any piece to play!";
-    });
-  }
-
-  renderBoard();
 }

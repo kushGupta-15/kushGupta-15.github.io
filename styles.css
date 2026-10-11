@@ -154,42 +154,6 @@ body {
   animation: pulseSubtle 2s ease-in-out infinite;
 }
 
-/* Interactive Chess Board Mini easter egg */
-.chess-board-grid {
-  display: grid;
-  grid-template-columns: repeat(8, minmax(0, 1fr));
-  width: 100%;
-  max-width: 280px;
-  aspect-ratio: 1 / 1;
-  border: 2px solid #334155;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.chess-sq {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 1.25rem;
-  user-select: none;
-  cursor: pointer;
-  transition: background-color 0.15s ease;
-}
-
-.chess-sq-light {
-  background-color: #e2e8f0;
-  color: #1e293b;
-}
-
-.chess-sq-dark {
-  background-color: #475569;
-  color: #f8fafc;
-}
-
-.chess-sq.highlight {
-  background-color: rgba(99, 102, 241, 0.7) !important;
-}
-
 /* Modal styles */
 .modal-overlay {
   background-color: rgba(5, 7, 12, 0.75);
