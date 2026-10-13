@@ -198,11 +198,11 @@ const PORTFOLIO_DATA = {
       id: "career-wave",
       title: "Career Wave",
       tagline: "Enterprise ATS Platform with Gemini AI Evaluator & Stripe Monetization",
-      category: "fullstack",
+      category: "fullstack ai",
       date: "Aug. 2026 – Sept. 2026",
       featured: true,
       github: "https://github.com/kushGupta-15/Career-wave",
-      demo: "https://github.com/kushGupta-15/Career-wave",
+      demo: "https://career-wave-hm4q.vercel.app/",
       imageTag: "Next.js 15 + Gemini AI + Neon",
       tech: ["Next.js 15", "TypeScript", "Prisma ORM", "PostgreSQL (Neon)", "Google Gemini API", "Stripe", "Inngest", "NextAuth", "UploadThing", "Resend", "Arcjet", "Zod"],
       summary: "Enterprise job board built with Next.js 15 App Router and Prisma on serverless PostgreSQL (Neon), featuring Gemini AI resume-to-job ATS scoring and Stripe monetization.",
@@ -215,6 +215,46 @@ const PORTFOLIO_DATA = {
       ]
     },
     {
+      id: "intelliprep",
+      title: "IntelliPrep",
+      tagline: "Autonomous AI Study Suite & Adaptive Learning Engine",
+      category: "fullstack ai",
+      date: "2026",
+      featured: true,
+      github: "https://github.com/kushGupta-15/IntelliPrep",
+      demo: "https://intelli-prep-eight.vercel.app/",
+      imageTag: "Next.js 15 + Gemini AI + Inngest",
+      tech: ["Next.js 15", "React.js", "TypeScript", "Google Gemini API", "PostgreSQL (Neon)", "Inngest", "Stripe", "Clerk", "Tailwind CSS"],
+      summary: "Autonomous full-stack educational engine powered by Next.js 15, Google Gemini, and Inngest background workers that deconstructs syllabi into structured chapter notes, Leitner-style spaced repetition flashcards, self-grading quizzes, and an in-context AI Academic Tutor.",
+      highlights: [
+        "Full-Stack Study Engine: Built with Next.js 15 App Router and React 18 on serverless PostgreSQL (Neon), providing instant chapter generation, course management, and public study portals.",
+        "Autonomous Gemini AI Pipeline: Leveraged Google Gemini API to parse complex topics or syllabi into hierarchical chapter curricula, interactive Q&A tutor responses, and dynamic assessment quizzes.",
+        "Asynchronous Inngest Workers: Engineered resilient multi-step background pipelines with Inngest for sequential chapter generation, flashcard synthesis, and automatic 429 rate-limit backoff handling.",
+        "Adaptive Study Features: Built 4-tier Leitner spaced repetition flashcards with flip animations, an interactive quiz grading system with past score analytics, and variable-speed Web Speech audio narration.",
+        "Enterprise Security & Monetization: Secured edge routes with Clerk authentication and sliding-window rate limiting; integrated Stripe payments for credit purchases and premium tier upgrades."
+      ]
+    },
+    {
+      id: "docflow",
+      title: "DocFlow",
+      tagline: "Real-Time Collaborative Workspace & Document Editor",
+      category: "fullstack realtime ai",
+      date: "2026",
+      featured: true,
+      github: "https://github.com/kushGupta-15/Docflow",
+      demo: "https://docflow-lyart.vercel.app/",
+      imageTag: "Next.js 14 + Liveblocks + Firestore",
+      tech: ["Next.js 14", "React.js", "TypeScript", "Firebase", "WebSockets", "Google Gemini API", "Clerk", "Tailwind CSS"],
+      summary: "Production-grade collaborative document workspace combining block-based rich text editing, conflict-free concurrent synchronization with Liveblocks and Yjs CRDTs, multi-user live cursors, Cloud Firestore persistence, and Google Gemini document intelligence.",
+      highlights: [
+        "Concurrent Real-Time Collaboration: Integrated Liveblocks and Yjs CRDTs over WebSockets for conflict-free simultaneous document editing with sub-50ms sync latency.",
+        "Live Presence & Multi-User Indicators: Delivered real-time live cursor tracking, user presence avatars, and granular room permission authorization via Clerk and Next.js Server Actions.",
+        "Google Cloud Firestore Storage: Implemented real-time snapshot listeners with Firebase Admin SDK for immediate document tree reactivity, workspace hierarchies, and RBAC role checks (Owner, Editor, Viewer).",
+        "Gemini AI Document Intelligence: Built in-editor AI assistant modals to generate automated document summaries, style rewrites, and multi-lingual translations via Google Gemini API.",
+        "Curated Template Gallery: Designed pre-formatted workflow canvases (Sprint Backlogs, Meeting Notes, Project Roadmaps, Brainstorming) alongside an export engine for printing and PDF generation."
+      ]
+    },
+    {
       id: "sketchbattle",
       title: "SketchBattle",
       tagline: "Real-Time Multiplayer Canvas & Algorithmic Game Engine",
@@ -222,7 +262,7 @@ const PORTFOLIO_DATA = {
       date: "Mar. 2026 – May 2026",
       featured: true,
       github: "https://github.com/kushGupta-15/SketchBattle",
-      demo: "https://github.com/kushGupta-15/SketchBattle",
+      demo: "https://sketch-battle-rho.vercel.app/",
       imageTag: "React 18 + Socket.IO + WebRTC",
       tech: ["React.js", "TypeScript", "Node.js", "Socket.IO", "WebSockets", "WebRTC", "Web Audio API", "Web Speech API", "MongoDB", "GitHub Actions (CI/CD)"],
       summary: "Synchronized multiplayer drawing and guessing game featuring sub-50ms canvas stroke latency, BFS flood fill, Levenshtein typo alerts, room-scoped WebRTC video, and browser synthesized audio.",
@@ -238,11 +278,11 @@ const PORTFOLIO_DATA = {
       id: "streamify",
       title: "Streamify",
       tagline: "Language Exchange Platform with Gemini AI Assistant & Live Video",
-      category: "realtime",
+      category: "realtime ai",
       date: "Apr. 2025 – June 2025",
       featured: true,
       github: "https://github.com/kushGupta-15/Streamify",
-      demo: "https://github.com/kushGupta-15/Streamify",
+      demo: "https://streamify-2-ezk2.onrender.com/",
       imageTag: "Stream SDK + Gemini AI + WebRTC",
       tech: ["React.js", "Node.js", "Express.js", "MongoDB", "Google Gemini API", "Stream SDK", "WebRTC", "Cloudinary", "Vitest", "Tailwind CSS"],
       summary: "Full-stack language exchange platform connecting global peers through a reciprocal compatibility algorithm, Google Gemini 3.8 Flash bi-directional translation, low-latency video calling, and Cloudinary media processing.",
@@ -277,12 +317,12 @@ const PORTFOLIO_DATA = {
     {
       id: "airline-microservices",
       title: "Airline Microservices Suite",
-      tagline: "Decoupled Backend Infrastructure for Flight Operations",
+      tagline: "Decoupled Distributed Backend Infrastructure for Flight Operations",
       category: "systems",
       date: "2025 – 2026",
       featured: false,
       github: "https://github.com/kushGupta-15/API_Gateway",
-      demo: "https://github.com/kushGupta-15/API_Gateway",
+      demo: "https://skyflow-api-gateway-vwri.onrender.com",
       imageTag: "API Gateway + Microservices",
       tech: ["Node.js", "Express.js", "REST APIs", "SQL", "Docker"],
       summary: "Modular enterprise airline platform divided into decoupled microservices: API Gateway, Flight Search & Management, Authentication Service, Booking Service, and Automated Reminder Notification Service.",
@@ -290,25 +330,8 @@ const PORTFOLIO_DATA = {
         "API Gateway acting as single entry point with reverse proxying, rate-limiting, and request forwarding.",
         "Dedicated Flight Search Service executing high-throughput queries across schedules, airports, and airplane seating.",
         "Independent Auth & Booking services ensuring transactional safety and isolated database instances.",
-        "Reminder Service handling asynchronous email notifications for upcoming flights."
-      ]
-    },
-    {
-      id: "gfg-sync-extension",
-      title: "GFG-sync-extension",
-      tagline: "Automated Chrome Extension for GeeksforGeeks Problem Sync",
-      category: "tools",
-      date: "2025",
-      featured: false,
-      github: "https://github.com/kushGupta-15/GFG-sync-extension",
-      demo: "https://github.com/kushGupta-15/GFG-sync-extension",
-      imageTag: "JavaScript + GitHub REST API",
-      tech: ["JavaScript", "HTML", "CSS", "GitHub"],
-      summary: "Productivity browser extension that automatically captures accepted code submissions on GeeksforGeeks and pushes solutions to the user's GitHub repository.",
-      highlights: [
-        "Implemented with Manifest V3 utilizing service workers and background scripts for secure credential handling.",
-        "Monitors submission completion via DOM observers and pushes formatted solution files and README problem descriptions to GitHub.",
-        "Helps competitive programmers build a continuous public record of problem-solving activity."
+        "Reminder Service handling asynchronous email notifications for upcoming flights.",
+        "Containerized Docker deployment across decoupled Render cloud services."
       ]
     },
     {
@@ -326,7 +349,27 @@ const PORTFOLIO_DATA = {
       highlights: [
         "Evaluates document relevancy score prior to LLM synthesis to eliminate noise and false grounding.",
         "Triggers automatic query reformulation if retrieval score falls below confidence threshold.",
-        "Demonstrates proficiency in modern generative AI architectures and knowledge grounding."
+        "Demonstrates proficiency in modern generative AI architectures and knowledge grounding.",
+        "Structured output verification and feedback scoring implemented with Python."
+      ]
+    },
+    {
+      id: "gfg-sync-extension",
+      title: "GFG to GitHub Sync Extension",
+      tagline: "Automated Chrome Extension for GeeksforGeeks Problem Sync",
+      category: "systems",
+      date: "2025",
+      featured: false,
+      github: "https://github.com/kushGupta-15/GFG-sync-extension",
+      demo: "https://github.com/kushGupta-15/GFG-sync-extension",
+      imageTag: "JavaScript + GitHub REST API",
+      tech: ["JavaScript", "HTML", "CSS", "GitHub"],
+      summary: "Productivity browser extension that automatically captures accepted code submissions on GeeksforGeeks and pushes solutions to the user's GitHub repository.",
+      highlights: [
+        "Implemented with Manifest V3 utilizing service workers and background scripts for secure credential handling.",
+        "Monitors submission completion via DOM observers and pushes formatted solution files and README problem descriptions to GitHub.",
+        "Generates clean folder structures and commits code automatically to GitHub repository upon success.",
+        "Helps competitive programmers build a continuous public record of problem-solving activity."
       ]
     }
   ],

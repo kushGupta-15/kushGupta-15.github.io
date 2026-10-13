@@ -696,9 +696,9 @@
           <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
             <i data-lucide="layers" class="w-3.5 h-3.5"></i> Featured Work
           </div>
-          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Software Engineering Projects</h2>
+          <h2 class="text-3xl sm:text-4xl font-bold text-white tracking-tight">Featured Engineering Projects</h2>
           <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
-            Production ATS platforms, real-time multiplayer drawing games, Gemini AI assistants, and customer lifetime value ML models built from scratch.
+            Full-stack Next.js platforms, real-time collaborative workspaces, Gemini AI study suites, multiplayer canvas games, and distributed microservices built from scratch.
           </p>
         </div>
 
@@ -725,7 +725,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- PROJECT 1: Career Wave -->
-          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-indigo-500/50 transition-all duration-300" data-category="fullstack">
+          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-indigo-500/50 transition-all duration-300" data-category="fullstack ai">
             <div class="space-y-4">
               
               <!-- Card Header -->
@@ -758,9 +758,10 @@
               <!-- Tech Badges -->
               <div class="flex flex-wrap gap-1.5 pt-2">
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Next.js 15</span>
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Prisma</span>
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Neon Postgres</span>
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Gemini 3.8 Flash</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">TypeScript</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Prisma ORM</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">PostgreSQL (Neon)</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Google Gemini API</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Stripe</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Inngest</span>
               </div>
@@ -769,17 +770,143 @@
 
             <!-- Card Footer Links -->
             <div class="flex items-center justify-between pt-6 border-t border-slate-800/80 mt-6">
-              <a href="https://github.com/kushGupta-15/Career-wave" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors">
-                <i data-lucide="github" class="w-4 h-4"></i> Repository
-              </a>
+              <div class="flex items-center gap-3">
+                <a href="https://github.com/kushGupta-15/Career-wave" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors" title="Source Code">
+                  <i data-lucide="github" class="w-4 h-4"></i> Repository
+                </a>
+                <a href="https://career-wave-hm4q.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors" title="Live Deployment">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
               <button onclick="openProjectModal('career-wave')" class="inline-flex items-center gap-1 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
                 Deep Dive <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </article>
 
-          <!-- PROJECT 2: SketchBattle -->
-          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-indigo-500/50 transition-all duration-300" data-category="realtime">
+          <!-- PROJECT 2: IntelliPrep -->
+          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-indigo-500/50 transition-all duration-300" data-category="fullstack ai">
+            <div class="space-y-4">
+              
+              <!-- Card Header -->
+              <div class="flex items-start justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">
+                  Featured AI Study Suite
+                </span>
+                <span class="text-xs text-slate-400 font-mono-code">2026</span>
+              </div>
+
+              <!-- Title & Tagline -->
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-indigo-400 transition-colors">IntelliPrep</h3>
+                <p class="text-xs text-indigo-300 font-medium mt-1">Autonomous AI Study Suite & Adaptive Learning Engine</p>
+              </div>
+
+              <!-- Summary -->
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Autonomous full-stack educational engine powered by Next.js 15, Google Gemini, and Inngest background workers that deconstructs syllabi into structured chapter notes, spaced repetition decks, and quizzes.
+              </p>
+
+              <!-- Highlights Bullets -->
+              <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                <li>Next.js 15 App Router & Server Actions on Neon Serverless PostgreSQL</li>
+                <li>Google Gemini AI pipeline parsing syllabi into modular study curricula</li>
+                <li>Asynchronous Inngest workers with automatic 429 rate-limit backoff</li>
+                <li>Leitner 4-tier spaced repetition flashcards & self-grading quiz attempts</li>
+              </ul>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Next.js 15</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">React.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">TypeScript</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Google Gemini API</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">PostgreSQL (Neon)</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Inngest</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Stripe</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Clerk</span>
+              </div>
+
+            </div>
+
+            <!-- Card Footer Links -->
+            <div class="flex items-center justify-between pt-6 border-t border-slate-800/80 mt-6">
+              <div class="flex items-center gap-3">
+                <a href="https://github.com/kushGupta-15/IntelliPrep" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors" title="Source Code">
+                  <i data-lucide="github" class="w-4 h-4"></i> Repository
+                </a>
+                <a href="https://intelli-prep-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors" title="Live Deployment">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
+              <button onclick="openProjectModal('intelliprep')" class="inline-flex items-center gap-1 text-xs font-semibold text-indigo-400 hover:text-indigo-300 transition-colors">
+                Deep Dive <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: DocFlow -->
+          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-purple-500/50 transition-all duration-300" data-category="fullstack realtime ai">
+            <div class="space-y-4">
+              
+              <!-- Card Header -->
+              <div class="flex items-start justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-purple-500/20 text-purple-300 border border-purple-500/30">
+                  Featured Collaborative Workspace
+                </span>
+                <span class="text-xs text-slate-400 font-mono-code">2026</span>
+              </div>
+
+              <!-- Title & Tagline -->
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">DocFlow</h3>
+                <p class="text-xs text-purple-300 font-medium mt-1">Real-Time Collaborative Workspace & Document Editor</p>
+              </div>
+
+              <!-- Summary -->
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Collaborative document editor combining block-based rich text, Liveblocks Yjs CRDT synchronization, multi-user presence cursors, Cloud Firestore, and Google Gemini document intelligence.
+              </p>
+
+              <!-- Highlights Bullets -->
+              <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                <li>Conflict-free concurrent editing powered by Liveblocks & Yjs CRDTs</li>
+                <li>Live multi-user cursor presence, avatar indicators & RBAC room permissions</li>
+                <li>Google Cloud Firestore integration with real-time snapshot listeners</li>
+                <li>Google Gemini AI document summarization, rewrites & translations</li>
+              </ul>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Next.js 14</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">React.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">TypeScript</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Firebase</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">WebSockets</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Google Gemini API</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Clerk</span>
+              </div>
+
+            </div>
+
+            <!-- Card Footer Links -->
+            <div class="flex items-center justify-between pt-6 border-t border-slate-800/80 mt-6">
+              <div class="flex items-center gap-3">
+                <a href="https://github.com/kushGupta-15/Docflow" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors" title="Source Code">
+                  <i data-lucide="github" class="w-4 h-4"></i> Repository
+                </a>
+                <a href="https://docflow-lyart.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors" title="Live Deployment">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
+              <button onclick="openProjectModal('docflow')" class="inline-flex items-center gap-1 text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors">
+                Deep Dive <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: SketchBattle -->
+          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-purple-500/50 transition-all duration-300" data-category="realtime">
             <div class="space-y-4">
               
               <!-- Card Header -->
@@ -811,11 +938,13 @@
 
               <!-- Tech Badges -->
               <div class="flex flex-wrap gap-1.5 pt-2">
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">React 18</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">React.js</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">TypeScript</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Node.js</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Socket.IO</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">WebSockets</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">WebRTC</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Web Audio API</span>
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Web Speech API</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">MongoDB</span>
               </div>
 
@@ -823,17 +952,22 @@
 
             <!-- Card Footer Links -->
             <div class="flex items-center justify-between pt-6 border-t border-slate-800/80 mt-6">
-              <a href="https://github.com/kushGupta-15/SketchBattle" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors">
-                <i data-lucide="github" class="w-4 h-4"></i> Repository
-              </a>
+              <div class="flex items-center gap-3">
+                <a href="https://github.com/kushGupta-15/SketchBattle" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors" title="Source Code">
+                  <i data-lucide="github" class="w-4 h-4"></i> Repository
+                </a>
+                <a href="https://sketch-battle-rho.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors" title="Live Deployment">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
               <button onclick="openProjectModal('sketchbattle')" class="inline-flex items-center gap-1 text-xs font-semibold text-purple-400 hover:text-purple-300 transition-colors">
                 Deep Dive <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </article>
 
-          <!-- PROJECT 3: Streamify -->
-          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-indigo-500/50 transition-all duration-300" data-category="realtime">
+          <!-- PROJECT 5: Streamify -->
+          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-cyan-500/50 transition-all duration-300" data-category="realtime ai">
             <div class="space-y-4">
               
               <!-- Card Header -->
@@ -868,8 +1002,9 @@
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">React.js</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Node.js</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">MongoDB</span>
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Gemini 3.8 Flash</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Google Gemini API</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Stream SDK</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">WebRTC</span>
                 <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">Vitest</span>
               </div>
 
@@ -877,16 +1012,21 @@
 
             <!-- Card Footer Links -->
             <div class="flex items-center justify-between pt-6 border-t border-slate-800/80 mt-6">
-              <a href="https://github.com/kushGupta-15/Streamify" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors">
-                <i data-lucide="github" class="w-4 h-4"></i> Repository
-              </a>
+              <div class="flex items-center gap-3">
+                <a href="https://github.com/kushGupta-15/Streamify" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors" title="Source Code">
+                  <i data-lucide="github" class="w-4 h-4"></i> Repository
+                </a>
+                <a href="https://streamify-2-ezk2.onrender.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors" title="Live Deployment">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Live Demo
+                </a>
+              </div>
               <button onclick="openProjectModal('streamify')" class="inline-flex items-center gap-1 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors">
                 Deep Dive <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </article>
 
-          <!-- PROJECT 4: Customer-Lifetime-Value-Prediction (NEW) -->
+          <!-- PROJECT 6: Customer-Lifetime-Value-Prediction -->
           <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-emerald-500/50 transition-all duration-300" data-category="ai">
             <div class="space-y-4">
               
@@ -943,8 +1083,8 @@
             </div>
           </article>
 
-          <!-- PROJECT 5: Airline Microservices Suite -->
-          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-indigo-500/50 transition-all duration-300" data-category="systems">
+          <!-- PROJECT 7: Airline Microservices Suite -->
+          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-amber-500/50 transition-all duration-300" data-category="systems">
             <div class="space-y-4">
               
               <!-- Card Header -->
@@ -987,17 +1127,22 @@
 
             <!-- Card Footer Links -->
             <div class="flex items-center justify-between pt-6 border-t border-slate-800/80 mt-6">
-              <a href="https://github.com/kushGupta-15/API_Gateway" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors">
-                <i data-lucide="github" class="w-4 h-4"></i> Repository
-              </a>
+              <div class="flex items-center gap-3">
+                <a href="https://github.com/kushGupta-15/API_Gateway" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors" title="Source Code">
+                  <i data-lucide="github" class="w-4 h-4"></i> Repository
+                </a>
+                <a href="https://skyflow-api-gateway-vwri.onrender.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-xs font-semibold text-amber-400 hover:text-amber-300 transition-colors" title="Live Deployment">
+                  <i data-lucide="external-link" class="w-3.5 h-3.5"></i> Live API
+                </a>
+              </div>
               <button onclick="openProjectModal('airline-microservices')" class="inline-flex items-center gap-1 text-xs font-semibold text-amber-400 hover:text-amber-300 transition-colors">
                 Deep Dive <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>
           </article>
 
-          <!-- PROJECT 6: Self-Corrective RAG Assistant -->
-          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-indigo-500/50 transition-all duration-300" data-category="ai">
+          <!-- PROJECT 8: Self-Corrective RAG Assistant -->
+          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-rose-500/50 transition-all duration-300" data-category="ai">
             <div class="space-y-4">
               
               <!-- Card Header -->
@@ -1041,6 +1186,58 @@
                 <i data-lucide="github" class="w-4 h-4"></i> Repository
               </a>
               <button onclick="openProjectModal('self-corrective-rag')" class="inline-flex items-center gap-1 text-xs font-semibold text-rose-400 hover:text-rose-300 transition-colors">
+                Deep Dive <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+          </article>
+
+          <!-- PROJECT 9: GFG to GitHub Sync Extension -->
+          <article class="project-card flex flex-col justify-between p-6 rounded-2xl glass-panel relative group hover:border-cyan-500/50 transition-all duration-300" data-category="systems">
+            <div class="space-y-4">
+              
+              <!-- Card Header -->
+              <div class="flex items-start justify-between">
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-cyan-500/20 text-cyan-300 border border-cyan-500/30">
+                  Productivity Tool
+                </span>
+                <span class="text-xs text-slate-400 font-mono-code">2025</span>
+              </div>
+
+              <!-- Title & Tagline -->
+              <div>
+                <h3 class="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">GFG to GitHub Sync Extension</h3>
+                <p class="text-xs text-cyan-300 font-medium mt-1">Automated Problem Submission Sync to GitHub</p>
+              </div>
+
+              <!-- Summary -->
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Browser extension that automatically captures accepted code submissions on GeeksforGeeks and pushes structured solutions and problem descriptions to GitHub.
+              </p>
+
+              <!-- Highlights Bullets -->
+              <ul class="text-xs text-slate-400 space-y-1.5 list-disc list-inside">
+                <li>Manifest V3 architecture with background service workers</li>
+                <li>Monitors submission events with DOM observers for instant capture</li>
+                <li>Generates organized directory trees and problem READMEs</li>
+                <li>Automated GitHub API commit creation for daily problem solving</li>
+              </ul>
+
+              <!-- Tech Badges -->
+              <div class="flex flex-wrap gap-1.5 pt-2">
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">JavaScript</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">HTML</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">CSS</span>
+                <span class="px-2 py-0.5 rounded text-[10px] font-mono-code bg-slate-800 text-slate-300">GitHub</span>
+              </div>
+
+            </div>
+
+            <!-- Card Footer Links -->
+            <div class="flex items-center justify-between pt-6 border-t border-slate-800/80 mt-6">
+              <a href="https://github.com/kushGupta-15/GFG-sync-extension" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-slate-300 hover:text-white transition-colors">
+                <i data-lucide="github" class="w-4 h-4"></i> Repository
+              </a>
+              <button onclick="openProjectModal('gfg-sync-extension')" class="inline-flex items-center gap-1 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors">
                 Deep Dive <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
               </button>
             </div>

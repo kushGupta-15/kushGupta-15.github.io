@@ -255,8 +255,9 @@ function initProjectFilters() {
       const filter = btn.getAttribute('data-filter');
 
       projectCards.forEach((card) => {
-        const cat = card.getAttribute('data-category');
-        if (filter === 'all' || cat === filter) {
+        const cat = card.getAttribute('data-category') || '';
+        const cats = cat.split(/\s+/);
+        if (filter === 'all' || cats.includes(filter)) {
           card.style.display = 'flex';
           card.classList.add('animate-fadeIn');
         } else {
