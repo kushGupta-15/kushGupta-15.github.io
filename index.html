@@ -1558,19 +1558,46 @@
     <div class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-3xl w-full max-h-[92vh] overflow-y-auto p-6 sm:p-8 space-y-6 shadow-2xl relative">
       
       <!-- Modal Top Controls -->
-      <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+      <div class="resume-control-bar flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
         <div class="flex items-center gap-2">
           <i data-lucide="file-text" class="w-5 h-5 text-indigo-400"></i>
-          <h3 class="text-lg font-bold text-white">Kush Gupta — Resume Preview</h3>
+          <div>
+            <h3 class="text-base sm:text-lg font-bold text-white">Kush Gupta — Resume</h3>
+            <p class="text-[11px] text-slate-400">Official 2-Page Resume PDF</p>
+          </div>
         </div>
-        <div class="flex items-center gap-2">
-          <button id="print-resume-btn" class="px-3 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white flex items-center gap-1.5 transition-colors" title="Print or Save PDF">
-            <i data-lucide="printer" class="w-4 h-4"></i> Print / Save PDF
+        <div class="flex items-center flex-wrap gap-2">
+          <!-- Direct Download PDF Button -->
+          <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white flex items-center gap-1.5 transition-all shadow-md shadow-indigo-600/30" title="Download official Kush_Gupta_Resume.pdf">
+            <i data-lucide="download" class="w-4 h-4"></i>
+            <span>Download PDF</span>
+          </a>
+          <!-- View PDF in New Tab -->
+          <a href="Kush_Gupta_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex px-3 py-1.5 rounded-lg text-xs font-semibold glass-panel text-slate-300 hover:text-white items-center gap-1.5 transition-colors" title="Open official PDF in new tab">
+            <i data-lucide="external-link" class="w-4 h-4"></i>
+            <span>View PDF</span>
+          </a>
+          <!-- Print / Browser PDF Save -->
+          <button id="print-resume-btn" class="px-3 py-1.5 rounded-lg text-xs font-semibold glass-panel text-slate-300 hover:text-white flex items-center gap-1.5 transition-colors" title="Print or save this resume view">
+            <i data-lucide="printer" class="w-4 h-4"></i>
+            <span>Print</span>
           </button>
+          <!-- Close Modal -->
           <button id="close-resume-modal" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" aria-label="Close resume preview">
             <i data-lucide="x" class="w-5 h-5"></i>
           </button>
         </div>
+      </div>
+
+      <!-- Quick Download Banner -->
+      <div class="resume-control-bar flex items-center justify-between p-3 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-xs text-indigo-300">
+        <div class="flex items-center gap-2">
+          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
+          <span>Authentic 2-page LaTeX PDF resume (<strong class="text-white">Kush_Gupta_Resume.pdf</strong>)</span>
+        </div>
+        <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="font-semibold text-white hover:text-indigo-200 transition-colors shrink-0 underline ml-2">
+          Download File &darr;
+        </a>
       </div>
 
       <!-- Resume Content Printable Canvas -->

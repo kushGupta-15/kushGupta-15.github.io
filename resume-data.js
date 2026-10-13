@@ -20,6 +20,7 @@ const PORTFOLIO_DATA = {
     batch: "2023 – Present",
     github: "https://github.com/kushGupta-15",
     linkedin: "https://www.linkedin.com/in/kush-gupta-b8a933293",
+    resumePdf: "Kush_Gupta_Resume.pdf",
     fideUrl: "https://ratings.fide.com/profile/25129937",
     fideId: "25129937",
     avatar: "https://avatars.githubusercontent.com/u/209094231?v=4",
