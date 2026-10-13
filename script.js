@@ -358,7 +358,12 @@ function initResumeModal() {
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
   if (printBtn) {
     printBtn.addEventListener('click', () => {
-      window.print();
+      const link = document.createElement('a');
+      link.href = 'Kush_Gupta_Resume.pdf';
+      link.download = 'Kush_Gupta_Resume.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     });
   }
 

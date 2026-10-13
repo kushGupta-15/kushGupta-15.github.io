@@ -82,11 +82,11 @@
 
       <!-- Action Utilities -->
       <div class="flex items-center gap-3">
-        <!-- Resume Button -->
-        <button class="open-resume-modal-btn hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 hover:bg-indigo-500/20 transition-all">
-          <i data-lucide="file-text" class="w-4 h-4"></i>
-          <span>Resume</span>
-        </button>
+        <!-- Resume Download Button (Direct link to exact official PDF) -->
+        <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 hover:bg-indigo-500/20 hover:text-indigo-300 transition-all shadow-sm" title="Download official Kush_Gupta_Resume.pdf">
+          <i data-lucide="download" class="w-4 h-4"></i>
+          <span>Resume (PDF)</span>
+        </a>
 
         <!-- GitHub Link -->
         <a href="https://github.com/kushGupta-15" target="_blank" rel="noopener noreferrer" class="p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800/60 transition-colors" title="GitHub Profile">
@@ -119,9 +119,9 @@
         <a href="#projects" class="mobile-nav-link py-2 hover:text-indigo-400">Projects</a>
         <a href="#achievements" class="mobile-nav-link py-2 hover:text-indigo-400">Achievements</a>
         <a href="#contact" class="mobile-nav-link py-2 hover:text-indigo-400">Contact</a>
-        <button class="open-resume-modal-btn w-full mt-2 py-2 text-center text-xs font-semibold rounded-lg bg-indigo-600 text-white flex items-center justify-center gap-2">
-          <i data-lucide="file-text" class="w-4 h-4"></i> View Resume
-        </button>
+        <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="w-full mt-2 py-2.5 text-center text-xs font-bold rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white flex items-center justify-center gap-2 transition-colors shadow-md">
+          <i data-lucide="download" class="w-4 h-4"></i> Download Resume (PDF)
+        </a>
       </div>
     </div>
   </header>
@@ -166,10 +166,16 @@
               <span>Explore Projects</span>
             </a>
 
-            <button class="open-resume-modal-btn px-6 py-3.5 rounded-xl font-semibold text-sm glass-panel text-slate-200 hover:text-white hover:border-indigo-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2">
-              <i data-lucide="file-down" class="w-4 h-4"></i>
-              <span>View Resume</span>
-            </button>
+            <!-- Direct Resume Download & View Buttons -->
+            <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="px-6 py-3.5 rounded-xl font-semibold text-sm glass-panel text-slate-200 hover:text-white hover:border-indigo-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center gap-2 shadow-sm" title="Download official Kush_Gupta_Resume.pdf">
+              <i data-lucide="download" class="w-4 h-4"></i>
+              <span>Download Resume (PDF)</span>
+            </a>
+
+            <a href="Kush_Gupta_Resume.pdf" target="_blank" rel="noopener noreferrer" class="px-4 py-3.5 rounded-xl font-semibold text-sm text-slate-400 hover:text-indigo-400 transition-colors flex items-center gap-1.5" title="View official resume in a new tab">
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+              <span>View PDF</span>
+            </a>
 
             <a href="#contact" class="px-5 py-3.5 rounded-xl font-semibold text-sm text-slate-400 hover:text-indigo-400 transition-colors flex items-center gap-1.5">
               <span>Contact Me</span>
@@ -1498,7 +1504,7 @@
         <a href="#hero" class="hover:text-indigo-400 transition-colors">Back to top ↑</a>
         <a href="https://github.com/kushGupta-15" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition-colors">GitHub</a>
         <a href="https://www.linkedin.com/in/kush-gupta-b8a933293" target="_blank" rel="noopener noreferrer" class="hover:text-indigo-400 transition-colors">LinkedIn</a>
-        <button class="open-resume-modal-btn hover:text-indigo-400 transition-colors">Resume</button>
+        <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="hover:text-indigo-400 transition-colors" title="Download official Kush_Gupta_Resume.pdf">Resume (PDF)</a>
       </div>
 
       <div>
@@ -1553,182 +1559,69 @@
     </div>
   </div>
 
-  <!-- 2. RESUME MODAL & PRINT VIEW (VERBATIM LATEST RESUME) -->
-  <div id="resume-modal" class="fixed inset-0 z-50 modal-overlay hidden items-center justify-center p-4">
-    <div class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-3xl w-full max-h-[92vh] overflow-y-auto p-6 sm:p-8 space-y-6 shadow-2xl relative">
+  <!-- 2. RESUME MODAL (EXACT OFFICIAL PDF DOCUMENT) -->
+  <div id="resume-modal" class="fixed inset-0 z-50 modal-overlay hidden items-center justify-center p-3 sm:p-6">
+    <div class="bg-slate-900 border border-slate-700/80 rounded-2xl max-w-4xl w-full max-h-[95vh] overflow-y-auto p-4 sm:p-6 space-y-4 shadow-2xl relative flex flex-col">
       
       <!-- Modal Top Controls -->
-      <div class="resume-control-bar flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-4">
-        <div class="flex items-center gap-2">
-          <i data-lucide="file-text" class="w-5 h-5 text-indigo-400"></i>
+      <div class="resume-control-bar flex flex-wrap items-center justify-between gap-3 border-b border-slate-800 pb-3">
+        <div class="flex items-center gap-2.5">
+          <div class="w-8 h-8 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
+            <i data-lucide="file-text" class="w-4 h-4"></i>
+          </div>
           <div>
             <h3 class="text-base sm:text-lg font-bold text-white">Kush Gupta — Resume</h3>
-            <p class="text-[11px] text-slate-400">Official 2-Page Resume PDF</p>
+            <p class="text-[11px] text-slate-400">Official 2-Page Resume (<span class="text-slate-300 font-mono text-[10px]">Kush_Gupta_Resume.pdf</span>)</p>
           </div>
         </div>
         <div class="flex items-center flex-wrap gap-2">
           <!-- Direct Download PDF Button -->
-          <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-indigo-600 hover:bg-indigo-500 text-white flex items-center gap-1.5 transition-all shadow-md shadow-indigo-600/30" title="Download official Kush_Gupta_Resume.pdf">
+          <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="px-4 py-2 rounded-lg text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white flex items-center gap-2 transition-all shadow-md shadow-indigo-600/30" title="Download official Kush_Gupta_Resume.pdf">
             <i data-lucide="download" class="w-4 h-4"></i>
-            <span>Download PDF</span>
+            <span>Download Exact PDF</span>
           </a>
           <!-- View PDF in New Tab -->
-          <a href="Kush_Gupta_Resume.pdf" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex px-3 py-1.5 rounded-lg text-xs font-semibold glass-panel text-slate-300 hover:text-white items-center gap-1.5 transition-colors" title="Open official PDF in new tab">
+          <a href="Kush_Gupta_Resume.pdf" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-lg text-xs font-semibold glass-panel text-slate-300 hover:text-white flex items-center gap-1.5 transition-colors" title="Open official PDF in new tab">
             <i data-lucide="external-link" class="w-4 h-4"></i>
-            <span>View PDF</span>
+            <span>Open in Tab</span>
           </a>
-          <!-- Print / Browser PDF Save -->
-          <button id="print-resume-btn" class="px-3 py-1.5 rounded-lg text-xs font-semibold glass-panel text-slate-300 hover:text-white flex items-center gap-1.5 transition-colors" title="Print or save this resume view">
-            <i data-lucide="printer" class="w-4 h-4"></i>
-            <span>Print</span>
-          </button>
           <!-- Close Modal -->
-          <button id="close-resume-modal" class="p-1.5 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" aria-label="Close resume preview">
+          <button id="close-resume-modal" class="p-2 rounded-lg text-slate-400 hover:text-white hover:bg-slate-800 transition-colors" aria-label="Close resume preview">
             <i data-lucide="x" class="w-5 h-5"></i>
           </button>
         </div>
       </div>
 
-      <!-- Quick Download Banner -->
-      <div class="resume-control-bar flex items-center justify-between p-3 rounded-xl bg-indigo-500/10 border border-indigo-500/20 text-xs text-indigo-300">
-        <div class="flex items-center gap-2">
-          <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-400 shrink-0"></i>
-          <span>Authentic 2-page LaTeX PDF resume (<strong class="text-white">Kush_Gupta_Resume.pdf</strong>)</span>
-        </div>
-        <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="font-semibold text-white hover:text-indigo-200 transition-colors shrink-0 underline ml-2">
-          Download File &darr;
-        </a>
+      <!-- Direct Embedded Official PDF Document -->
+      <div class="w-full flex-1 min-h-[70vh] bg-slate-950 rounded-xl overflow-hidden border border-slate-800 relative">
+        <object data="Kush_Gupta_Resume.pdf" type="application/pdf" class="w-full h-[74vh] bg-white">
+          <iframe src="Kush_Gupta_Resume.pdf" class="w-full h-[74vh] bg-white" title="Kush Gupta Official Resume">
+            <div class="p-8 text-center space-y-4 bg-slate-900 text-slate-300">
+              <i data-lucide="file-text" class="w-12 h-12 text-indigo-400 mx-auto"></i>
+              <h4 class="text-lg font-bold text-white">Kush Gupta — Resume PDF</h4>
+              <p class="text-sm">Click below to download or view the official 2-page PDF file:</p>
+              <div class="flex justify-center gap-3 pt-2">
+                <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="px-5 py-2.5 rounded-xl text-xs font-bold bg-indigo-600 hover:bg-indigo-500 text-white flex items-center gap-2">
+                  <i data-lucide="download" class="w-4 h-4"></i> Download Kush_Gupta_Resume.pdf
+                </a>
+                <a href="Kush_Gupta_Resume.pdf" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 rounded-xl text-xs font-semibold glass-panel text-slate-200">
+                  Open in New Tab
+                </a>
+              </div>
+            </div>
+          </iframe>
+        </object>
       </div>
 
-      <!-- Resume Content Printable Canvas -->
-      <div id="printable-resume" class="space-y-6 text-slate-200 text-sm">
-        
-        <!-- Header Info -->
-        <div class="text-center space-y-1 border-b border-slate-800 pb-4">
-          <h1 class="text-2xl font-extrabold text-white">Kush Gupta</h1>
-          <p class="text-xs text-slate-300">Gurugram, Haryana, India</p>
-          <p class="text-xs text-slate-300">
-            +91-9625832097 &bull; kushg1517@gmail.com &bull; linkedin.com/in/kush-gupta-b8a933293 &bull; github.com/kushGupta-15
-          </p>
+      <!-- Footer Info Bar -->
+      <div class="flex flex-wrap items-center justify-between text-xs text-slate-400 pt-2 border-t border-slate-800/80">
+        <div class="flex items-center gap-2">
+          <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i>
+          <span>Official 2-Page Resume PDF (Exact formatting compiled with LaTeX)</span>
         </div>
-
-        <!-- Summary -->
-        <div>
-          <h4 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-1.5">Summary</h4>
-          <p class="text-xs text-slate-300 leading-relaxed">
-            B.Tech Computer Science student seeking a Software Development role, with hands-on experience building and deploying full-stack web applications using React.js, Next.js, TypeScript, and Node.js. Experienced in designing RESTful APIs, integrating AI (Google Gemini), and building real-time systems with WebSockets and WebRTC. Strong problem solver with 750+ DSA problems solved and a LeetCode rating of 1861.
-          </p>
-        </div>
-
-        <!-- Education -->
-        <div>
-          <h4 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-2">Education</h4>
-          <div class="space-y-2 text-xs">
-            <div class="flex justify-between font-semibold text-white">
-              <span>B.Tech &mdash; Indian Institute of Information Technology, Una</span>
-              <span>7.60 CGPA (Current) | 2023–Present</span>
-            </div>
-            <div class="flex justify-between text-slate-300">
-              <span>Senior Secondary &mdash; CBSE Board</span>
-              <span>93.2% | 2023</span>
-            </div>
-            <div class="flex justify-between text-slate-300">
-              <span>Secondary &mdash; CBSE Board</span>
-              <span>99% | 2021</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Projects -->
-        <div>
-          <h4 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-2">Key Projects</h4>
-          
-          <div class="space-y-4 text-xs">
-            
-            <!-- Career Wave -->
-            <div>
-              <div class="flex justify-between font-bold text-white">
-                <span>Career Wave &bull; Next.js, TypeScript, Prisma, PostgreSQL</span>
-                <span>Aug. 2026 – Sept. 2026</span>
-              </div>
-              <ul class="list-disc list-inside text-slate-300 mt-1 space-y-0.5">
-                <li><strong>Architected a Full-Stack ATS Platform:</strong> Built an enterprise job board with Next.js 15 App Router, TypeScript, and Prisma ORM on serverless PostgreSQL (Neon), replacing separate REST APIs with type-safe Server Actions and React Server Components.</li>
-                <li><strong>Engineered Gemini AI ATS Evaluator:</strong> Integrated Google Gemini 3.8 Flash to compute real-time resume-to-job ATS match scores, highlight candidate strengths, and identify keyword gaps, alongside a conversational career discovery assistant.</li>
-                <li><strong>Integrated Stripe Monetization & Inngest Scheduling:</strong> Monetized job postings via Stripe Checkout with tiered listing durations and webhook-verified activation; eliminated traditional cron servers by scheduling automated post expirations with Inngest serverless events.</li>
-                <li><strong>Built Recruiter ATS Dashboard & Notifications:</strong> Delivered a recruiter management suite with candidate pipeline status tracking, an in-browser PDF resume previewer, candidate application withdrawal, and Resend transactional email alerts for application milestones.</li>
-                <li><strong>Hardened Edge Security & Cloud Storage:</strong> Implemented NextAuth v5 role-based onboarding (Recruiter vs. Seeker), guarded mutations with Arcjet bot shielding and Zod validation, and integrated UploadThing for secure cloud resume and logo storage.</li>
-              </ul>
-            </div>
-
-            <!-- SketchBattle -->
-            <div>
-              <div class="flex justify-between font-bold text-white">
-                <span>SketchBattle &bull; React, TypeScript, Node.js, Socket.IO, MongoDB</span>
-                <span>Mar. 2026 – May 2026</span>
-              </div>
-              <ul class="list-disc list-inside text-slate-300 mt-1 space-y-0.5">
-                <li><strong>Real-Time Multiplayer Canvas:</strong> Built a synchronized drawing engine with sub-50ms latency using React 18, TypeScript, and Socket.IO, featuring a 4-way BFS flood fill algorithm, stroke undo stack, and mid-round canvas history replay upon reconnection.</li>
-                <li><strong>Algorithmic Game Engine:</strong> Implemented core mechanics including speed-tiered rank scoring, Levenshtein distance near-miss typo alerts (“Very Close!”), progressive word hints, and customizable room settings with difficulty tiers.</li>
-                <li><strong>P2P Video & Synthesized Audio:</strong> Integrated room-scoped WebRTC peer-to-peer video streaming alongside WebSockets, and developed a zero-dependency sound effects synthesizer using the native browser Web Audio API.</li>
-                <li><strong>Mobile-First UX & Voice Input:</strong> Designed a fully responsive party-game UI featuring a dedicated main-screen live chat guess input for mobile users, complemented by Web Speech API voice recognition for hands-free guessing.</li>
-                <li><strong>Security, Persistence & CI/CD:</strong> Hardened the backend with bcrypt password hashing, sliding-window IP rate limiting, and 24-hr MongoDB TTL indexes; authored 15 automated tests integrated into a GitHub Actions CI pipeline.</li>
-              </ul>
-            </div>
-
-            <!-- Streamify -->
-            <div>
-              <div class="flex justify-between font-bold text-white">
-                <span>Streamify &bull; React, Node.js, Express.js, MongoDB, Stream SDK</span>
-                <span>Apr. 2025 – June 2025</span>
-              </div>
-              <ul class="list-disc list-inside text-slate-300 mt-1 space-y-0.5">
-                <li><strong>Smart Reciprocal Matching:</strong> Engineered a mutual language-scoring algorithm categorizing partners into tiered compatibility ratings (100% Perfect Exchange, Native Speaker, Study Partner) with real-time search and language filters.</li>
-                <li><strong>Google Gemini AI Assistant:</strong> Integrated Gemini 3.8 Flash in chat with structured JSON output for bi-directional translation with phonetics, grammar diagnostics with explanations, and contextual conversation icebreakers.</li>
-                <li><strong>Real-Time Chat & WebRTC Video:</strong> Implemented low-latency messaging and video calling via Stream SDKs, enforcing backend room-level authorization checks (/api/chat/verify-call) and in-chat call notification prompts.</li>
-                <li><strong>Security & Database Optimization:</strong> Hardened authentication using httpOnly JWT cookies, bcrypt, and rate limiting; optimized social queries (send, accept, reject, unfriend) with compound MongoDB indexes.</li>
-                <li><strong>Cloud Media & Automated Testing:</strong> Built a Cloudinary CDN media pipeline with automated face-centering crops and 5MB validation; ensured reliability with automated test suites using Vitest and Node.js test runner.</li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-
-        <!-- Skills -->
-        <div>
-          <h4 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-2">Skills</h4>
-          <div class="text-xs space-y-1 text-slate-300">
-            <p><strong class="text-white">Languages:</strong> JavaScript, TypeScript, Python, C++, SQL</p>
-            <p><strong class="text-white">Frontend:</strong> React.js, Next.js (App Router, Server Actions, RSC), HTML, CSS, Tailwind CSS, Redux, Zustand, jQuery</p>
-            <p><strong class="text-white">Backend:</strong> Node.js, Express.js, REST APIs, Socket.IO, WebSockets, JWT Authentication, NextAuth, Zod, Arcjet</p>
-            <p><strong class="text-white">Databases & ORM:</strong> MongoDB, PostgreSQL (Neon), Prisma ORM, Firebase</p>
-            <p><strong class="text-white">AI & Real-Time:</strong> Google Gemini API, WebRTC, Stream SDK, Web Audio API, Web Speech API</p>
-            <p><strong class="text-white">Integrations & Services:</strong> Stripe, Inngest, Resend, UploadThing, Cloudinary, Clerk</p>
-            <p><strong class="text-white">Testing & DevOps:</strong> Vitest, Node.js Test Runner, GitHub Actions (CI/CD), Git, GitHub, Docker, AWS, Vercel, Render</p>
-            <p><strong class="text-white">Libraries:</strong> NumPy, Pandas, Matplotlib, Seaborn</p>
-            <p><strong class="text-white">Tools:</strong> VS Code, Replit, LaTeX</p>
-            <p><strong class="text-white">Soft Skills:</strong> Problem Solving, Analytical Thinking, Leadership (Chess Captain), Teamwork & Collaboration, Communication, Time Management, Adaptability, Quick Learning</p>
-          </div>
-        </div>
-
-        <!-- Key Courses Taken -->
-        <div>
-          <h4 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-2">Key Courses Taken</h4>
-          <div class="text-xs space-y-1 text-slate-300">
-            <p><strong class="text-white">Mathematics:</strong> Linear Algebra, Basic Calculus, Discrete Mathematics, Probability &amp; Random Processes</p>
-            <p><strong class="text-white">Core Subjects:</strong> DSA, OOPS, Discrete Structures, Computer Organization, Operating Systems, Digital System Design, Computer Networks, DBMS, System Design, Compiler Design, Parallel Architecture and Processing, Machine Learning, Deep Learning, Software Development</p>
-          </div>
-        </div>
-
-        <!-- Achievements -->
-        <div>
-          <h4 class="text-xs font-bold text-indigo-400 uppercase tracking-wider mb-2">Achievements & Honors</h4>
-          <ul class="list-disc list-inside text-xs text-slate-300 space-y-1">
-            <li>Solved 750+ DSA problems across LeetCode, GeeksforGeeks, and other platforms; <strong>Knight on LeetCode with a contest rating of 1861</strong>.</li>
-            <li>Completed AlgoUniversity’s Dynamic Programming Camp led by Codeforces Master Manas Kumar Verma, covering Matrix Exponentiation and SQRT Decomposition.</li>
-            <li>FIDE-rated chess player (FIDE ID: 25129937) with national and international tournament experience; served as <strong>chess captain at Inter IIIT</strong> and secured <strong>2nd place in the online Inter IIIT tournament (2025)</strong>.</li>
-          </ul>
-        </div>
-
+        <a href="Kush_Gupta_Resume.pdf" download="Kush_Gupta_Resume.pdf" class="text-indigo-400 hover:text-indigo-300 underline font-medium">
+          Direct Download: Kush_Gupta_Resume.pdf &darr;
+        </a>
       </div>
 
     </div>

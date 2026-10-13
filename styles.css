@@ -395,15 +395,11 @@ body {
 }
 
 [data-theme="light"] #modal-project-title,
-[data-theme="light"] #modal-project-summary,
-[data-theme="light"] #printable-resume h1,
-[data-theme="light"] #printable-resume span {
+[data-theme="light"] #modal-project-summary {
   color: #0f172a !important;
 }
 
-[data-theme="light"] #modal-project-highlights span,
-[data-theme="light"] #printable-resume p,
-[data-theme="light"] #printable-resume li {
+[data-theme="light"] #modal-project-highlights span {
   color: #334155 !important;
 }
 
@@ -422,147 +418,22 @@ body {
   background: #94a3b8;
 }
 
-/* Print view optimization (Prints ONLY the resume, zero website chrome) */
+/* Print optimization */
 @media print {
   @page {
-    margin: 12mm 15mm;
+    margin: 10mm;
     size: portrait;
   }
 
-  html, body {
-    background: #ffffff !important;
-    color: #111827 !important;
-    font-size: 10pt !important;
-    line-height: 1.4 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    height: auto !important;
-    overflow: visible !important;
-  }
-
-  /* Hide entire website UI, navbar, hero, all sections, footer, background canvas, other modals */
   header,
-  main,
   footer,
   #ambient-canvas,
-  #project-modal,
   .glass-nav,
   #mobile-nav-drawer,
   #toast,
+  .modal-overlay,
   .no-print {
     display: none !important;
-  }
-
-  /* Force display of resume modal wrapper without any backdrop or modal box */
-  #resume-modal {
-    display: block !important;
-    position: static !important;
-    inset: auto !important;
-    background: transparent !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    max-height: none !important;
-    overflow: visible !important;
-    border: none !important;
-    box-shadow: none !important;
-    z-index: 1 !important;
-  }
-
-  /* Reset inner modal box container to look like a clean paper document */
-  #resume-modal > div {
-    display: block !important;
-    position: static !important;
-    background: #ffffff !important;
-    color: #111827 !important;
-    border: none !important;
-    box-shadow: none !important;
-    border-radius: 0 !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    max-height: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    overflow: visible !important;
-  }
-
-  /* Hide modal top controls/buttons and notices during print */
-  #resume-modal-controls,
-  .resume-control-bar,
-  #close-resume-modal,
-  #print-resume-btn,
-  #resume-modal button,
-  #resume-modal a[download],
-  #resume-modal a[target="_blank"] {
-    display: none !important;
-  }
-
-  /* Format printable resume canvas strictly */
-  #printable-resume {
-    display: block !important;
-    background: #ffffff !important;
-    color: #111827 !important;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
-    font-size: 9.5pt !important;
-    line-height: 1.35 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  #printable-resume * {
-    color: #111827 !important;
-    text-shadow: none !important;
-    box-shadow: none !important;
-    border-color: #cbd5e1 !important;
-  }
-
-  #printable-resume h1 {
-    font-size: 20pt !important;
-    font-weight: 800 !important;
-    color: #0f172a !important;
-    margin-bottom: 2pt !important;
-  }
-
-  #printable-resume h4 {
-    color: #0f172a !important;
-    border-bottom: 1.5px solid #cbd5e1 !important;
-    font-size: 9.5pt !important;
-    font-weight: 700 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.05em !important;
-    margin-top: 10pt !important;
-    margin-bottom: 4pt !important;
-    padding-bottom: 2pt !important;
-  }
-
-  #printable-resume strong {
-    color: #000000 !important;
-    font-weight: 700 !important;
-  }
-
-  #printable-resume ul {
-    margin-top: 2pt !important;
-    margin-bottom: 5pt !important;
-    padding-left: 14pt !important;
-  }
-
-  #printable-resume li {
-    margin-bottom: 2pt !important;
-    font-size: 8.5pt !important;
-    line-height: 1.35 !important;
-  }
-
-  #printable-resume p {
-    font-size: 8.5pt !important;
-    line-height: 1.35 !important;
-    margin-bottom: 3pt !important;
-  }
-
-  #printable-resume a {
-    color: #1e40af !important;
-    text-decoration: none !important;
   }
 }
 
