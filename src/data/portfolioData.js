@@ -208,7 +208,7 @@ export const PORTFOLIO_DATA = {
       date: "2025 – 2026",
       featured: false,
       github: "https://github.com/kushGupta-15/API_Gateway",
-      demo: "https://skyflow-api-gateway-vwri.onrender.com",
+      demo: "https://airline-frontend-eight.vercel.app/",
       tech: ["Node.js", "Express.js", "REST APIs", "SQL", "Docker", "Microservices"],
       summary: "Modular enterprise airline platform divided into decoupled microservices: API Gateway, Flight Search & Management, Authentication Service, Booking Service, and Automated Reminder Notification Service.",
       highlights: [
