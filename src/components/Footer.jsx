@@ -1,7 +1,10 @@
 import React from 'react';
 import { ArrowUp, Download } from 'lucide-react';
+import { PORTFOLIO_DATA } from '../data/portfolioData';
 
 export default function Footer() {
+  const { profile } = PORTFOLIO_DATA;
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -23,7 +26,7 @@ export default function Footer() {
         {/* Center: Navigation / Links */}
         <div className="flex items-center gap-6">
           <a
-            href="https://github.com/kushGupta-15"
+            href={profile.github}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slate-900 dark:hover:text-white transition-colors"
@@ -31,7 +34,7 @@ export default function Footer() {
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/kush-gupta-b8a933293"
+            href={profile.linkedin}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slate-900 dark:hover:text-white transition-colors"
@@ -39,7 +42,7 @@ export default function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://leetcode.com/u/kushgupta15/"
+            href={profile.leetcode}
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-slate-900 dark:hover:text-white transition-colors"
@@ -47,7 +50,7 @@ export default function Footer() {
             LeetCode
           </a>
           <a
-            href="Kush_Gupta_Resume.pdf"
+            href={profile.resumeUrl}
             download="Kush_Gupta_Resume.pdf"
             className="hover:text-slate-900 dark:hover:text-white transition-colors inline-flex items-center gap-1 font-medium"
           >

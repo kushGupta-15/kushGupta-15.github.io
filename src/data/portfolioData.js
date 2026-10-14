@@ -16,7 +16,7 @@ export const PORTFOLIO_DATA = {
     resumeUrl: "Kush_Gupta_Resume.pdf",
     github: "https://github.com/kushGupta-15",
     linkedin: "https://www.linkedin.com/in/kush-gupta-b8a933293",
-    leetcode: "https://leetcode.com/u/kushgupta15/",
+    leetcode: "https://leetcode.com/u/kushGupta17/",
     fide: "https://ratings.fide.com/profile/25129937",
     fideId: "25129937",
     status: "Seeking Software Development Roles • Open to Opportunities",
