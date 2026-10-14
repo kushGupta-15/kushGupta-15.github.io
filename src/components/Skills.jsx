@@ -94,7 +94,7 @@ export default function Skills() {
                   {cat.items.map((item, i) => (
                     <span
                       key={i}
-                      className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-50 dark:bg-slate-850 text-slate-800 dark:text-slate-200 border border-slate-200/80 dark:border-slate-700/80 hover:border-slate-300 dark:hover:border-slate-600 transition-colors"
+                      className="px-2.5 py-1 rounded-md text-xs font-medium bg-slate-100 dark:bg-slate-800 text-slate-800 dark:text-slate-100 border border-slate-200 dark:border-slate-700 hover:border-slate-300 dark:hover:border-slate-500 transition-colors"
                     >
                       {item}
                     </span>

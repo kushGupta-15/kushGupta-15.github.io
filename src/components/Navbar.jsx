@@ -45,7 +45,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
           {/* Theme Toggle */}
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-850 transition-colors"
+            className="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:text-slate-950 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             aria-label="Toggle theme"
             title={darkMode ? "Switch to light mode" : "Switch to dark mode"}
           >
@@ -76,7 +76,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
         <div className="flex items-center gap-2 sm:hidden">
           <button
             onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-850 transition-colors"
+            className="p-2 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             aria-label="Toggle theme"
           >
             {darkMode ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
@@ -84,7 +84,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
 
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-850 transition-colors"
+            className="p-2 rounded-lg text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -102,7 +102,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
                 key={link.name}
                 href={link.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className="px-2 py-1.5 rounded-md text-slate-700 dark:text-slate-300 hover:bg-slate-200/60 dark:hover:bg-slate-850"
+                className="px-2 py-1.5 rounded-md text-slate-700 dark:text-slate-300 hover:bg-slate-200/60 dark:hover:bg-slate-800"
               >
                 {link.name}
               </a>

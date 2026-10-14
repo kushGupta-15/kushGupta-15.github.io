@@ -8,7 +8,7 @@ export default function ProjectCard({ project, onSelect }) {
       
       {/* Top Meta */}
       <div className="space-y-3">
-        <div className="flex items-center justify-between text-xs text-slate-500">
+        <div className="flex items-center justify-between text-xs text-slate-500 dark:text-slate-400">
           <span className="font-mono text-[11px] uppercase tracking-wider text-indigo-600 dark:text-indigo-400 font-semibold">
             {project.category}
           </span>
@@ -79,7 +79,7 @@ export default function ProjectCard({ project, onSelect }) {
 
           <button
             onClick={() => onSelect(project)}
-            className="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
+            className="inline-flex items-center gap-1 text-xs font-semibold text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
             title="Read architecture overview"
           >
             <span>Details</span>

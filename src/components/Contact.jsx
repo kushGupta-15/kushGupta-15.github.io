@@ -82,7 +82,7 @@ export default function Contact() {
                 {profile.email}
               </a>
 
-              <div className="text-xs text-slate-500 flex items-center gap-1.5 pt-2 border-t border-slate-100 dark:border-slate-800">
+              <div className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5 pt-2 border-t border-slate-100 dark:border-slate-800">
                 <Phone className="w-3.5 h-3.5 text-slate-400" />
                 <span>{profile.phone}</span>
                 <span className="mx-1">•</span>
@@ -110,7 +110,7 @@ export default function Contact() {
                     <div className="text-xs font-semibold text-slate-900 dark:text-white">
                       {s.name}
                     </div>
-                    <div className="text-[11px] text-slate-500 truncate">
+                    <div className="text-[11px] text-slate-500 dark:text-slate-400 truncate">
                       {s.username}
                     </div>
                   </a>
@@ -135,7 +135,7 @@ export default function Contact() {
                   placeholder="e.g. Alex Morgan"
                   value={formState.name}
                   onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-850 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-indigo-600 dark:focus:border-indigo-400 transition-colors"
+                  className="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-indigo-600 dark:focus:border-indigo-400 transition-colors"
                 />
               </div>
 
@@ -147,7 +147,7 @@ export default function Contact() {
                   placeholder="alex@company.com"
                   value={formState.email}
                   onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-850 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-indigo-600 dark:focus:border-indigo-400 transition-colors"
+                  className="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-indigo-600 dark:focus:border-indigo-400 transition-colors"
                 />
               </div>
 
@@ -159,7 +159,7 @@ export default function Contact() {
                   placeholder="Tell me about your team, project, or role..."
                   value={formState.message}
                   onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                  className="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-slate-50 dark:bg-slate-850 text-slate-900 dark:text-white placeholder-slate-400 focus:outline-none focus:border-indigo-600 dark:focus:border-indigo-400 transition-colors resize-none"
+                  className="w-full px-3.5 py-2.5 rounded-lg border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:border-indigo-600 dark:focus:border-indigo-400 transition-colors resize-none"
                 />
               </div>
 

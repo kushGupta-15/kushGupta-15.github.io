@@ -87,7 +87,7 @@ export default function Hero() {
               <div className="text-xs font-semibold text-slate-700 dark:text-slate-300">
                 {metric.label}
               </div>
-              <div className="text-[11px] text-slate-500 dark:text-slate-500">
+              <div className="text-[11px] text-slate-500 dark:text-slate-400">
                 {metric.detail}
               </div>
             </div>

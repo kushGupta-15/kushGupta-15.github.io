@@ -64,7 +64,7 @@ export default function Footer() {
           <span>© 2026 Kush Gupta</span>
           <button
             onClick={scrollToTop}
-            className="p-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-500 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-850 transition-colors cursor-pointer"
+            className="p-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors cursor-pointer"
             title="Back to top"
             aria-label="Back to top"
           >

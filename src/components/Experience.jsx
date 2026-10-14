@@ -24,7 +24,7 @@ export default function Experience() {
 
         {/* 1. Education Timeline */}
         <div className="space-y-6">
-          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 flex items-center gap-2">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-2">
             <GraduationCap className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
             <span>Academic Background</span>
           </h3>
@@ -40,7 +40,7 @@ export default function Experience() {
                     <span className="font-semibold text-indigo-600 dark:text-indigo-400 text-xs sm:text-sm">
                       {edu.degree}
                     </span>
-                    <span className="flex items-center gap-1.5 text-slate-500 font-mono text-[11px]">
+                    <span className="flex items-center gap-1.5 text-slate-500 dark:text-slate-400 font-mono text-[11px]">
                       <Calendar className="w-3.5 h-3.5" />
                       {edu.period}
                     </span>
@@ -70,7 +70,7 @@ export default function Experience() {
 
         {/* 2. Technical Milestones & Honors */}
         <div className="space-y-6">
-          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 flex items-center gap-2">
+          <h3 className="text-sm font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400 flex items-center gap-2">
             <Award className="w-4 h-4 text-indigo-600 dark:text-indigo-400" />
             <span>Competitive Milestones & Leadership</span>
           </h3>
@@ -93,7 +93,7 @@ export default function Experience() {
                   </p>
                 </div>
 
-                <div className="text-[11px] font-mono text-slate-500 pt-2 border-t border-slate-100 dark:border-slate-800">
+                <div className="text-[11px] font-mono text-slate-500 dark:text-slate-400 pt-2 border-t border-slate-100 dark:border-slate-800">
                   {item.metric}
                 </div>
               </div>

@@ -63,7 +63,7 @@ export default function About() {
                 <MapPin className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-slate-900 dark:text-white">Current Base</div>
-                  <div className="text-slate-500">{profile.location}</div>
+                  <div className="text-slate-500 dark:text-slate-400">{profile.location}</div>
                 </div>
               </div>
 
@@ -71,7 +71,7 @@ export default function About() {
                 <GraduationCap className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-slate-900 dark:text-white">Education</div>
-                  <div className="text-slate-500">IIIT Una • B.Tech CSE (2023–Present)</div>
+                  <div className="text-slate-500 dark:text-slate-400">IIIT Una • B.Tech CSE (2023–Present)</div>
                 </div>
               </div>
 
@@ -79,7 +79,7 @@ export default function About() {
                 <Award className="w-4 h-4 text-indigo-600 dark:text-indigo-400 shrink-0 mt-0.5" />
                 <div>
                   <div className="font-semibold text-slate-900 dark:text-white">Competitive Rank</div>
-                  <div className="text-slate-500">Knight on LeetCode (Rating 1861)</div>
+                  <div className="text-slate-500 dark:text-slate-400">Knight on LeetCode (Rating 1861)</div>
                 </div>
               </div>
             </div>

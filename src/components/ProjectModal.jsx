@@ -36,7 +36,7 @@ export default function ProjectModal({ project, onClose }) {
 
         {/* Modal Header */}
         <div className="space-y-2 pr-8">
-          <div className="flex items-center gap-3 text-xs text-slate-500">
+          <div className="flex items-center gap-3 text-xs text-slate-500 dark:text-slate-400">
             <span className="font-mono uppercase font-semibold text-indigo-600 dark:text-indigo-400">
               {project.category}
             </span>
@@ -58,7 +58,7 @@ export default function ProjectModal({ project, onClose }) {
 
         {/* Overview */}
         <div className="space-y-2">
-          <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+          <h4 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
             Architecture Overview
           </h4>
           <p className="text-sm text-slate-700 dark:text-slate-300 leading-relaxed">
@@ -68,7 +68,7 @@ export default function ProjectModal({ project, onClose }) {
 
         {/* Key Engineering Accomplishments */}
         <div className="space-y-3">
-          <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+          <h4 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider">
             Key Engineering Accomplishments
           </h4>
           <ul className="space-y-2.5">
@@ -83,7 +83,7 @@ export default function ProjectModal({ project, onClose }) {
 
         {/* Full Tech Stack */}
         <div className="space-y-2.5 pt-2 border-t border-slate-100 dark:border-slate-800">
-          <h4 className="text-xs font-bold text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
+          <h4 className="text-xs font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider flex items-center gap-1.5">
             <Tag className="w-3.5 h-3.5" />
             <span>Technologies & Libraries</span>
           </h4>
@@ -129,7 +129,7 @@ export default function ProjectModal({ project, onClose }) {
 
           <button
             onClick={onClose}
-            className="px-4 py-2 text-xs font-medium text-slate-500 hover:text-slate-900 dark:hover:text-white"
+            className="px-4 py-2 text-xs font-medium text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors cursor-pointer"
           >
             Close
           </button>
