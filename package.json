@@ -4,8 +4,10 @@
   "version": "2.0.0",
   "type": "module",
   "scripts": {
+    "predev": "node scripts/prepare-dev.js",
     "dev": "vite",
-    "build": "vite build",
+    "prebuild": "node scripts/prepare-dev.js",
+    "build": "vite build && node scripts/prepare-prod.js",
     "preview": "vite preview"
   },
   "dependencies": {
