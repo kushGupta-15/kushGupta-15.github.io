@@ -1,19 +1,23 @@
 {
   "name": "kush-gupta-portfolio",
-  "version": "1.0.0",
-  "description": "Personal Portfolio Website for Kush Gupta - Full Stack Software Engineer",
-  "main": "index.html",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
   "scripts": {
-    "start": "npx serve .",
-    "dev": "npx serve ."
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
-  "keywords": [
-    "portfolio",
-    "kush-gupta",
-    "software-engineer",
-    "full-stack",
-    "iiit-una"
-  ],
-  "author": "Kush Gupta",
-  "license": "MIT"
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "vite": "^6.0.7"
+  }
 }
